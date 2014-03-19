@@ -3,10 +3,10 @@
 session_start();
 
 //Get the affiliate id from the link.
-$aff_id = isset($_GET['a']) ? $_GET['a'] : '';
+$aff_id = isset($_GET['affid']) ? $_GET['affid'] : '';
 
 //Get the campaign id from the link.
-$campaign_id = isset($_GET['c']) ? $_GET['c'] : '';
+$campaign_id = isset($_GET['sid']) ? $_GET['sid'] : '';
 
 //Get the subids from the link.
 $s1 = isset($_GET['s1']) ? $_GET['s1'] : '';
@@ -107,6 +107,11 @@ $( document ).ready(function() {
 									<input name="fields_zip" id="zipcode" type="text" placeholder="Zip" required="required">
 									<input name="fields_phone" id="phone" type="text" placeholder="Phone" required="required">
 									<input name="fields_email" id="email" type="email" placeholder="Email" required="required">
+									<input type="hidden" name="s1" value="<?php echo $s1; ?>">
+									<input type="hidden" name="s2" value="<?php echo $s2; ?>">
+									<input type="hidden" name="s3" value="<?php echo $s3; ?>">
+									<input type="hidden" name="aid" value="<?php echo $aff_id;?>">
+									<input type="hidden" name="cid" value="<?php echo $campaign_id; ?>">
 								</div>
 								<div class="red-button">
 									<a class="details_transaction" href="#">Rush
