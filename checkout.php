@@ -1,6 +1,13 @@
 <?php
-session_start ();
+session_start();
+$prospect_id 			= $_GET['prospectid'];
+$session_prospect_id 	= $_SESSION['qt_prospectid'];
 
+if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect_id))
+{
+	header("Location: index.php");
+	exit();
+}
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en"
@@ -270,30 +277,20 @@ session_start ();
 								</div>
 								<div class="product-content clearfix">
 									<div class="check">
-										<img
-											src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/uncheck-box.png"
-											alt="check"> <input style="display: none;" class="checkbox"
-											type="checkbox" value="54.9500" name="extra" />
+										<img src="images/uncheck-box.png" alt="check">
+										<input style="display: none;" class="checkbox" type="checkbox" value="54.9500" name="extra" />
 									</div>
-
-
-									<input type="hidden" name="p_retailprice" class="p_retailprice"
-										value="69.00" /> <input type="hidden" name="p_saving"
-										class="p_saving" value="20.00" /> <input type="hidden"
-										name="p_shippingamount" class="p_shippingamount" value="5.95" />
+									<input type="hidden" name="p_retailprice" class="p_retailprice" value="69.00" />
+									<input type="hidden" name="p_saving" class="p_saving" value="20.00" />
+									<input type="hidden" name="p_shippingamount" class="p_shippingamount" value="5.95" />
 									<input type="hidden" name="p_cost" class="p_cost" value="49.00" />
 									<div class="checkout-product-img onemonth">
-										<img
-											src="http://www.quicktrimoffer.com/wp-content/uploads/2014/03/onemonth.png"
-											alt="product-onemonth-img">
+										<img src="images/onemonth.png" alt="product-onemonth-img">
 									</div>
 									<div class="product-info pushdown">
 										<p>1 Month Starter Plan</p>
 										<div class="clearfix">
-											<span class="prize third-box">$49 <em
-												style="text-decoration: none; padding-top: 10px;">Plus
-													Shipping</em></span>
-
+											<span class="prize third-box">$49 <em style="text-decoration: none; padding-top: 10px;">Plus Shipping</em></span>
 										</div>
 									</div>
 								</div>
@@ -320,9 +317,7 @@ session_start ();
 									</div>
 								</div>
 								<div class="moneyback-img">
-									<img
-										src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/us-postal-service-img.jpg"
-										alt="us-postal-service-img">
+									<img src="images/us-postal-service-img.jpg" alt="us-postal-service-img">
 								</div>
 							</div>
 							<div class="footer checkout-footer">
@@ -332,11 +327,11 @@ session_start ();
 											<ul id="menu-footer-navigation" class="menu">
 												<li id="menu-item-24"
 													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a
-													href="http://www.quicktrimoffer.com/privacy-policy/">Privacy
+													href="privacy.html">Privacy
 														Policy</a></li>
 												<li id="menu-item-25"
 													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a
-													href="http://www.quicktrimoffer.com/?p=66">Terms &#038;
+													href="terms.html">Terms &#038;
 														Conditions</a></li>
 												<li id="menu-item-27"
 													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a>Contact
@@ -365,23 +360,19 @@ session_start ();
 								final step<span>payment information</span>
 							</div>
 							<div class="checkoutform">
-
-
 								<div class="checkoutform-feild">
-
-									<input name="lander_id" id="lander_id" type="hidden" value="4" />
-									<input name="card_holder" type="text" value=""
-										placeholder="Card Holder"> <select id="CardType"
-										name="cc_type">
+									<input name="card_holder" type="text" value="" placeholder="Card Holder">
+									<select id="CardType" name="cc_type">
 										<option value="">--Select--</option>
 										<option value="visa">Visa</option>
 										<option value="master">MasterCard</option>
 										<option value="amex">American Express</option>
 										<option value="Discover">Discover</option>
-									</select> <input id="CardNumber" name="cc_number" type="text"
-										value="" placeholder="Credit Card Number"> <span
-										class="feild-half"> <label>Expiration Date</label> <select
-										id="cardmonth" name="fields_expmonth" class="cardmonth">
+									</select> 
+									<input id="CardNumber" name="cc_number" type="text" value="" placeholder="Credit Card Number">
+									<span class="feild-half">
+										<label>Expiration Date</label> 
+										<select id="cardmonth" name="fields_expmonth" class="cardmonth">
 											<option value="">Month</option>
 											<option value="01">01</option>
 											<option value="02">02</option>
@@ -395,8 +386,8 @@ session_start ();
 											<option value="10">10</option>
 											<option value="11">11</option>
 											<option value="12">12</option>
-									</select> <select id="cardyear" name="fields_expyear"
-										class="cardyear">
+										</select>
+										<select id="cardyear" name="fields_expyear" class="cardyear">
 											<option value="">Year</option>
 											<option value="13">2013</option>
 											<option value="14">2014</option>
@@ -411,20 +402,13 @@ session_start ();
 											<option value="23">2023</option>
 											<option value="24">2024</option>
 											<option value="25">2025</option>
-									</select>
-									</span> <span class="feild-half"> <input id="carverirynum"
-										name="cc_cvv" type="text" value="" placeholder="CVV"> <input
-										type='hidden' name='step' value='second' /> <input
-										type='hidden' name='temp_order_id' value='21305' /> <input
-										type="hidden" id="cc_expires" name="cc_expires"
-										class="cc_expires" /> <input type='hidden'
-										id='hasFormSubmitted' value='' /> <input type='hidden'
-										name='campaign_id' id='campaign_id' value='19' /> <input
-										type="hidden" id="isWebForm" value="1" /> <input type='hidden'
-										name='is_upsell' value='0'> <input type='hidden'
-										name='invoice_id' value='MTU5'><input type='hidden'
-										name='tempOrderId' value='21305'> <small> <a target="_blank"
-											href="https://www.quicktrimoffer.com/cvv-help/">What is this?</a>
+										</select>
+									</span> 
+									<span class="feild-half">
+									<input id="carverirynum" name="cc_cvv" type="text" value="" placeholder="CVV">
+									<input type="hidden" id="cc_expires" name="cc_expires" class="cc_expires" /> 
+									<small> 
+										<a target="_blank" href="cvv-help.html">What is this?</a>
 									</small>
 									</span>
 								</div>
@@ -435,20 +419,18 @@ session_start ();
 								</div>
 
 								<div class="sponsors">
-									<span class="txt-secure"><img
-										src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/lock-img.png"
-										alt="lock">This is a secure <em>128 BIT SSL</em> connection.</span>
-									<img
-										src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/sponsor-img1.png"
-										alt="sponsor"> <img
-										src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/sponsor-img2.png"
-										alt="sponsor"> <img
-										src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/sponsor-img3.png"
-										alt="sponsor"> <img
-										src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/sponsor-img4.png"
-										alt="sponsor"> <span class="payment-card"> <a href="#"><img
-											src="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/images/payment-method-img.jpg"
-											alt="payment-method"></a>
+									<span class="txt-secure">
+										<img src="images/lock-img.png" alt="lock">
+										This is a secure <em>128 BIT SSL</em> connection.
+									</span>
+									<img src="images/sponsor-img1.png" alt="sponsor"> 
+									<img src="images/sponsor-img2.png" alt="sponsor">
+									<img src="images/sponsor-img3.png" alt="sponsor">
+									<img src="images/sponsor-img4.png" alt="sponsor">
+									<span class="payment-card">
+										<a href="#">
+											<img src="images/payment-method-img.jpg" alt="payment-method">
+										</a>
 									</span>
 								</div>
 							</div>

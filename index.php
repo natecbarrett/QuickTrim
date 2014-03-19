@@ -16,9 +16,13 @@ $s1 = isset($_GET['s1']) ? $_GET['s1'] : '';
 $s2 = isset($_GET['s1']) ? $_GET['s2'] : '';
 $s3 = isset($_GET['s1']) ? $_GET['s3'] : '';
 
-//Store the stuff we need in the session.
-$_SESSION['qt_aid'] = $aff_id;
+//Get the users ip address.
+$ip = $_SERVER["REMOTE_ADDR"];
 
+//Store the stuff we need in the session.
+$_SESSION['qt_affid'] = $aff_id;
+$_SESSION['qt_clickid'] = $click_id;
+$_SESSION['qt_reqid'] = $request_id;
 
 
 ?>
@@ -38,6 +42,7 @@ $_SESSION['qt_aid'] = $aff_id;
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script src="js/blockUI.js"></script>
 <script>
 $( document ).ready(function() {
     $(".clickhere").click(function(event){
@@ -52,7 +57,7 @@ $( document ).ready(function() {
     	var check = $("#prospectform :input").validator();
     	if (check.data("validator").checkValidity()==true)
     	{
-
+   		 $.blockUI({ message: $('#domMessage') });
     		$.ajax({
   			  type: "POST",
   			  url: "submission/prospect.php",
@@ -61,7 +66,7 @@ $( document ).ready(function() {
 				var response = jQuery.parseJSON(response);
 				if (response.success == "true")
 				{
-					window.location = "checkout.php";
+					window.location = "checkout.php?prospectid=" + response.message;
 				}
 
 				else
@@ -116,6 +121,7 @@ $( document ).ready(function() {
 									<input type="hidden" name="aff_id" value="<?php echo $aff_id;?>">
 									<input type="hidden" name="click_id" value="<?php echo $click_id; ?>">
 									<input type="hidden" name="req_id" value="<?php echo $request_id; ?>">
+									<input type="hidden" name="ip" value="<?php echo $ip; ?>">
 								</div>
 								<div class="red-button">
 									<a class="details_transaction" href="#">Rush
@@ -270,6 +276,9 @@ $( document ).ready(function() {
 			</div>
 
 		</div>
+		<div id="domMessage" style="display:none;"> 
+    <h1>We are processing your request.  Please be patient.</h1> 
+</div> 
 
 </body>
 </html>

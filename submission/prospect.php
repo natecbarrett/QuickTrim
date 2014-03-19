@@ -76,17 +76,24 @@ $params = array(
 	"click_id"		=>$_POST['click_id'],
 
 	//The req id.
-	"OPT"			=> $_POST['request']
+	"OPT"			=> $_POST['req_id'],
+	
+	//Notes
+	"notes"			=> '',
+	
+	//Ip Address
+	"ipAddress"		=> $_POST['ip']
 );
 
 $param_string = $limelight_api_url . "?";
 
 foreach($params as $key=>$value)
 {
-	$param_string .= $key . "=" . $value . "&";
+	$param_string .= $key . "=" . urlencode($value) . "&";
 }
 
 rtrim($param_string, "&");
+//var_dump($param_string);
 
 //Create the curl object.
 $curl = new CURL();
@@ -103,7 +110,22 @@ $result = $curl->exec();
 //Clear the curl sessions.
 $curl->clear();
 
-$result = array("success" => "false", "message" => "$result");
+
+$response_parts = array();
+parse_str($result, $response_parts);
+
+if ($response_parts["errorFound"] == 0)
+{
+	$_SESSION['qt_prospectid'] = $response_parts["prospectId"];
+	$result = array("success" => "true", "message" => $response_parts["prospectId"]);
+}
+
+else 
+{
+	$result = array("success" => "true", "message" => $response_parts["responseCode"]);
+}
+
+
 echo json_encode($result);
 
 ?>
