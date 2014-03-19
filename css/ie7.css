@@ -1,0 +1,8 @@
+
+.formfeilds{ padding:0 20px;}
+.head-form form input[type="text"], .head-form form select, .head-form form textarea{ width:230px; padding:4% 4%;}
+.head-form form select{ width:245px;}
+.head-form .red-button a{ width:260px;}
+.claim-head-button{ margin-top:-18%; margin-left:-12%;}
+.footer ul li{ float:left;}
+.headform-title2{ font-size:24px;}

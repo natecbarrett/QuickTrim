@@ -1,0 +1,565 @@
+
+@media screen and (min-width:170px) and (max-width:620px)
+{
+    .head-left{ display:none;}
+	.head-mid{ margin-left:0; float:none;}
+	.head-right{ float:none; margin:20px auto;}
+	.claim-head-button{ float:none; width:auto; margin:0; position:inherit;}
+	.product-box{ background-size:100% 100%;}
+	.claim{ float:none;}
+	.clickhere{ float:none; margin-left:0; text-align:center;}
+	.foot-nav{ text-align:center;}
+	.footer ul{ float:none;}
+	.copyright{ float:none; text-align:center;}
+	.copyright img{ display:inline-block;}
+	.head-main-text{ margin-top:-12px;}
+	#header{ background:none;}
+    .client-img img{ float:none;}
+	.two-third{ float:none; width:auto; margin-bottom:15px;}
+    .one-third{ float:none; width:auto;}
+	.solution-txt{ float:none; width:auto; padding-top:0;}
+	.checkout-left-content{ width:auto; float:none;}
+	.checkout-logo{ float:none; text-align:center;}
+	.checkout-header{ width:auto;}
+	.secured{ float:none; padding:0; text-align:center;}
+	.checkout-right-content{ float:none; margin:25px auto;}
+	.checkout-model{ display:none;}
+	.shipping-detail{ float:none; width:auto;}
+	.moneyback-img{ float:none; width:auto; text-align:center;}
+	.freeshipping{ margin-top:10px;}
+	.upsell-model-img2, .upsell-model-img, .upsell-model-img3{ display:none;}
+	.testimonial{ float:none; width:auto;}
+	.customer-review{ padding:10% 6%;}
+	.product-price-detail{ float:none; width:auto; margin-top:25px;}
+	.final-product-img{ float:none; width:auto; margin-top:25px;}
+	.upsell-product-left{ float:none; width:auto; margin:0;}
+	.upsell-product-right{ float:none; width:auto; margin-top:0; display:none;}
+	.upsell-product{ margin-top:0;}
+	.upsell-sugarcarb-img{ position:inherit; text-align:center;}
+	#header.upsellheader .head-mid{ margin-left:0;}
+	#header.upsellheader .logo{ text-align:center; margin-left:0;}
+	#header.upsellheader{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+	.upsell-product{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+	.upsell-cellusim-img{ position:inherit; text-align:center; bottom:0; right:0;}
+	.round-arrow{ display:none;}
+	.thanku-head-left{ display:none;}
+	.head-thanku{ float:none; width:auto; margin-left:0;}
+}
+
+@media screen and (min-width:175px) and (max-width:320px)
+{
+   .head-right{ width:100%;}
+   .headform-title span{ font-size:15px;}
+   .headform-title{ font-size:18px; line-height:22px;}
+   .formfeilds{ padding:0 2%;}
+   .head-form .red-button a{ font-size:18px;}
+   .head-form .red-button span{ font-size:14px;}
+   .makeiteasy span{ font-size:20px; font-weight:bold; line-height:24px; padding-bottom:10px;}
+   .makeiteasy{ font-size:25px;}
+   .stack{ font-size:18px; line-height:23px;}
+   .product-time{ font-size:32px; line-height:35px; letter-spacing:-2px; width:70%;}
+   .product-time span{ font-size:30px; line-height:30px;}
+   .product-img{ float:none;}
+   .product-box{ padding:10% 3% 5% 3%;}
+   .makethechange{ font-size:22px; padding:2% 2%; line-height:28px;}
+   .count-img{ width:15%; margin-top:10px;}
+   .headform-title2{ font-size:17px;}
+   .check-img{ display:none;}
+   .offer-txt{ float:none; width:auto; letter-spacing:0; font-size:27px; line-height:30px;}
+   .extreme-burn{ padding:30px 0 10px 0; float:none;}
+   .loss-support{ float:none; width:auto; margin-left:0;}
+   .loss-support strong{ font-size:32px; line-height:38px; padding-top:10px;}
+   .content{ padding:10% 3% 10%;}
+   h1{ padding:20px 0; font-size:32px; line-height:37px;}
+   h2{ font-size:22px;}
+   .two-third h2 span{ font-size:22px; padding-top:10px;}
+   .two-third span{ line-height:25px;}
+   .left-img{ display:none;}
+   .solution span{ font-size:24px; line-height:28px;}
+   .makethechange{ font-size:20px; line-height:25px; padding:15px 0 25px 0;}
+   .freeshipping{ margin-top:5px; float:none; text-align:center;}
+   .product-heading h2{ float:none; text-align:center;}
+   .product-content{ padding:20px 15px; width:85%;}
+   .check{ width:15%;}
+   .checkout-product-img{ width:85%;}
+   .product-info{ float:none; width:auto;}
+   .checkout-right-content{ width:100%;}
+   .red-button a{ font-size:22px;}
+   .shipping-detail .lbl{ width:45%;}
+   .checkout-right-content .headform-title{ font-size:32px; line-height:30px;}
+   .product-content h4{ font-size:18px;}
+   .checkout-right-content .headform-title span{ font-size:15px;}
+   .shipping-detail span{ font-size:13px;}
+   .upsell-product h1{ font-size:35px; padding-top:25px;}
+   .upsell-product-name span{ font-size:20px; padding:10px 0;}
+   .satisfied-customer h2{ font-size:25px; line-height:30px;}
+   .upsell-product-speciality span{ font-size:20px;}
+   .buythisproduct a{ display:inline-block; font-size:25px; padding:15px;}
+   .satisfied-customer{ padding-top:25px;}
+   .product-price-detail span.oldprice{ font-size:35px;}
+   .product-price-detail span.nowonly{ font-size:35px;}
+   .product-price-detail span.newprice{ font-size:40px;}
+   .buythisproduct span img{ display:none; }
+   .product-price-detail span{ font-size:25px; line-height:38px;}
+   .client-review{ width:100%; float:none;}
+   .client-img span{ text-align:left;}
+   .client-img{ width:auto; float:none;}
+   .testimonial{ margin-bottom:5%;}
+   .nothanks-button a{ font-size:22px;}
+   .thankutxt-line1{ font-size:26px;}
+   .thanku-txt{ font-size:23px;}
+}
+
+@media screen and (min-width:320px) and (max-width:380px)
+{
+   .head-right{ width:100%;}
+   .headform-title span{ font-size:18px;}
+   .headform-title{ font-size:22px; line-height:26px;}
+   .formfeilds{ padding:0 2%;}
+   .head-form .red-button a{ font-size:22px;}
+   .makeiteasy span{ font-size:22px; font-weight:bold; line-height:26px; padding-bottom:10px;}
+   .makeiteasy{ font-size:30px;}
+   .stack{ font-size:18px; line-height:25px;}
+   .product-time{ font-size:32px; line-height:35px; letter-spacing:-2px; width:70%;}
+   .product-time span{ font-size:30px; line-height:30px;}
+   .product-img{ float:none;}
+   .product-box{ padding:10% 3% 5% 3%;}
+   .makethechange{ font-size:22px; padding:2% 2%; line-height:30px;}
+   .count-img{ width:12%; margin-top:10px;}
+   .headform-title2{ font-size:20px;}
+   .check-img{ display:none;}
+   .offer-txt{ float:none; width:auto; letter-spacing:-2px; font-size:32px;}
+   .extreme-burn{ padding:30px 0 10px 0; float:none;}
+   .loss-support{ float:none; width:auto; margin-left:0;}
+   .loss-support strong{ font-size:34px; padding-top:10px;}
+   .content{ padding:10% 3% 10%;}
+   h2{ font-size:22px;}
+   .two-third h2 span{ font-size:22px; padding-top:10px;}
+   .two-third span{ line-height:25px;}
+   .left-img{ display:none;}
+   .solution span{ font-size:24px; line-height:28px;}
+   .makethechange{ font-size:20px; line-height:25px; padding:15px 0 25px 0;}
+   .freeshipping{ margin-top:5px; float:none; text-align:center;}
+   .product-heading h2{ float:none; text-align:center;}
+   .product-content{ padding:20px 15px; width:85%;}
+   .check{ width:15%;}
+   .checkout-product-img{ width:85%;}
+   .product-info{ float:none; width:auto;}
+   .checkout-right-content{ width:90%;}
+   .red-button a{ font-size:25px;}
+   .shipping-detail .lbl{ width:45%;}
+   .checkout-right-content .headform-title{ font-size:42px;}
+   .product-content h4{ font-size:18px;}
+   .upsell-product h1{ font-size:42px; padding-top:25px;}
+   .upsell-product-name span{ font-size:20px; padding:10px 0;}
+   .satisfied-customer h2{ font-size:25px; line-height:30px;}
+   .upsell-product-speciality span{ font-size:20px;}
+   .buythisproduct a{ display:inline-block; font-size:25px; padding:15px;}
+   .satisfied-customer{ padding-top:25px;}
+   .product-price-detail span.oldprice{ font-size:35px;}
+   .product-price-detail span.nowonly{ font-size:35px;}
+   .product-price-detail span.newprice{ font-size:40px;}
+   .buythisproduct span img{ display:none; }
+   .product-price-detail span{ font-size:25px; line-height:38px;}
+   .client-review{ width:100%; float:none;}
+   .client-img span{ text-align:left;}
+   .client-img{ width:auto; float:none;}
+   .testimonial{ margin-bottom:5%;}
+   .nothanks-button a{ font-size:22px;}
+   .thankutxt-line1{ font-size:26px;}
+   .thanku-txt{ font-size:23px;}
+}
+
+@media screen and (min-width:380px) and (max-width:420px)
+{
+   .head-right{ width:100%;}
+   .headform-title span{ font-size:20px;}
+   .headform-title{ font-size:27px;}
+   .makeiteasy span{ font-size:25px; font-weight:bold; line-height:30px;}
+   .makeiteasy{ font-size:40px;}
+   .stack{ font-size:20px;}
+   .product-time{ font-size:35px; line-height:35px; letter-spacing:-2px; width:44%;}
+   .product-time span{ font-size:32px;}
+   .product-img{ width:35%;}
+   .product-box{ padding:5% 1%;}
+   .makethechange{ font-size:22px; padding:2% 2%; line-height:30px;}
+   .count-img{ width:10%; margin-top:10px;}
+   .headform-title2{ font-size:24px;}
+   .product-box{ padding:10% 1%;}
+   .check-img{ padding-top:4%; margin-right:4%;}
+   .offer-txt{ font-size:35px; line-height:38px; padding-top:15px;}
+   .extreme-burn{ padding-top:6%; width:25%; padding-right:20px;}
+   .loss-support{ float:none; width:auto; padding-bottom:5%;}
+   .loss-support strong{ font-size:32px; line-height:35px;}
+   .content{ padding:7% 3% 12%;}
+   h2{ font-size:22px;}
+   .two-third h2 span{ font-size:22px; padding-top:10px;}
+   .two-third span{ line-height:25px;}
+   .left-img{display:none;}
+   .solution span{ font-size:25px; line-height:28px;}
+   .freeshipping{ margin-top:8px; float:none; text-align:center;}
+   .product-heading h2{ float:none; text-align:center;}
+   .product-content{ padding:20px 15px; width:85%;}
+   .check{ width:15%;}
+   .checkout-product-img{ width:85%;}
+   .product-info{ float:none; width:auto;}
+   .checkout-right-content{ width:90%;}
+   .red-button a{ font-size:25px;}
+   .shipping-detail .lbl{ width:45%;}
+   .checkout-right-content .headform-title{ font-size:42px;}
+   .product-content h4{ font-size:18px;}
+   .upsell-product h1{ font-size:42px; padding-top:25px;}
+   .upsell-product-name span{ font-size:22px; padding:10px 0;}
+   .satisfied-customer h2{ font-size:25px; line-height:30px;}
+   .upsell-product-speciality span{ font-size:20px;}
+   .buythisproduct a{ display:inline-block; font-size:25px; padding:15px;}
+   .satisfied-customer{ padding-top:25px;}
+   .product-price-detail span.oldprice{ font-size:45px;}
+   .product-price-detail span.nowonly{ font-size:40px;}
+   .product-price-detail span.newprice{ font-size:50px;}
+   .buythisproduct span img{ display:none; }
+   .thankutxt-line1{ font-size:28px;}
+   .thanku-txt{ font-size:24px;}
+}
+
+@media screen and (min-width:420px) and (max-width:480px)
+{
+   .head-right{ width:90%;}
+   .headform-title span{ font-size:20px;}
+   .headform-title{ font-size:27px;}
+   .makeiteasy span{ font-size:25px; font-weight:bold; line-height:30px;}
+   .makeiteasy{ font-size:42px;}
+   .stack{ font-size:20px;}
+   .product-time{ font-size:35px; line-height:35px; letter-spacing:-2px; width:44%;}
+   .product-time span{ font-size:32px;}
+   .product-img{ width:35%;}
+   .product-box{ padding:5% 1%;}
+   .makethechange{ font-size:22px; padding:4% 2%; line-height:25px;}
+   .count-img{ width:10%;}
+   .headform-title2{ font-size:25px;}
+   .offer-txt{ font-size:32px; line-height:35px; letter-spacing:-1px; padding-top:5px;}
+   .product-box{ padding:10% 1%;}
+   .extreme-burn{ padding-right:20px; width:18%;}
+   .loss-support strong{ font-size:30px;}
+   .loss-support{ float:none; width:auto;}
+   .left-img{ display:none;}
+   .content{ padding:6% 3% 8% 3%;}
+   .two-third h2 span{ padding-top:10px;}
+   .check-img{ margin-right:4%;}
+   .freeshipping{ margin-top:10px; float:none; text-align:center;}
+   .product-heading h2{ float:none; text-align:center;}
+   .product-content{ padding:20px 15px; width:85%;}
+   .check{ width:12%;}
+   .checkout-product-img{ float:none; width:auto;}
+   .product-info{ float:none; width:auto;}
+   .checkout-right-content{ width:90%;}
+   .red-button a{ font-size:28px;}
+   .shipping-detail .lbl{ width:45%;}
+   .product-content h4{ font-size:20px;}
+   .upsell-product h1{ font-size:42px; padding-top:25px;}
+   .upsell-product-name span{ font-size:22px; padding:10px 0;}
+   .satisfied-customer h2{ font-size:28px; line-height:35px;}
+   .upsell-product-speciality span{ font-size:20px;}
+   .buythisproduct a{ display:inline-block; font-size:25px;}
+   .satisfied-customer{ padding-top:25px;}
+   .thankutxt-line1{ font-size:30px;}
+   .thanku-txt{ font-size:26px;}
+}
+
+@media screen and (min-width:480px) and (max-width:540px)
+{
+   .head-right{ width:80%;}
+   .makeiteasy span{ font-size:28px; line-height:35px;}
+   .makeiteasy{ font-size:45px;}
+   .stack{ font-size:20px;}
+   .product-time{ font-size:42px; line-height:45px; letter-spacing:-2px; width:44%;}
+   .product-time span{ font-size:38px;}
+   .product-img{ width:35%;}
+   .product-box{ padding:5% 0;}
+   .makethechange{ font-size:25px; padding:2% 2%; line-height:32px;}
+   .offer-txt{ font-size:35px; padding-top:8px; letter-spacing:-2px;}
+   .product-box{ padding:7% 0;}
+   .loss-support{ float:none; width:auto;}
+   .extreme-burn{ padding-right:20px; width:20%;}
+   .loss-support strong{ font-size:35px;}
+   .content{ padding:4% 3% 6% 3%;}
+   h2{ font-size:22px; line-height:28px;}
+   .two-third h2 span{ font-size:22px;}
+   .solution{ padding-top:15px;}
+   .product-info{ float:none; width:auto;}
+   .checkout-product-img{ width:auto; float:none;}
+   .select-package a{ display:inline-block;}
+   .select-package{ margin-top:1%;}
+   .check{ width:10%; margin-top:2%; margin-right:2%;}
+   .checkout-right-content{ width:75%;}
+   .red-button a{ font-size:26px;}
+   .checkout-right-content .headform-title{ font-size:45px;}
+   .upsell-product h1{ font-size:50px; padding-top:15px;}
+   .upsell-product-name span{ font-size:22px; padding:10px 0;}
+   .satisfied-customer h2{ font-size:28px; line-height:35px;}
+   .upsell-product-speciality span{ font-size:22px;}
+   .buythisproduct a{ display:inline-block; font-size:28px;}
+}
+
+@media screen and (min-width:540px) and (max-width:580px)
+{
+   .makeiteasy span{ font-size:30px; line-height:35px;}
+   .makeiteasy{ font-size:40px;}
+   .stack{ font-size:20px;}
+   .product-time{ font-size:40px; line-height:45px; letter-spacing:-2px; width:42%;}
+   .product-time span{ font-size:35px;}
+   .product-img{ width:35%;}
+   .product-box{ padding:5% 0;}
+   .makethechange{ font-size:25px; padding:2% 2%; line-height:28px;}
+   .head-right{ width:68%;}
+   .offer-txt{ padding-top:8px; width:90%; font-size:35px;}
+   .check-img{ width:8%;}
+   .extreme-burn{ width:20%;}
+   .loss-support{ width:76%;}
+   .loss-support strong{ font-size:32px;}
+   .product-box2{ padding-bottom:7%;}
+   .content{ padding:4% 2% 7%;}
+   .left-img{ padding-bottom:25px; margin-right:5%; padding-top:20px;}
+   .solution span{ font-size:22px; line-height:23px;}
+   h2{ font-size:22px; line-height:28px;}
+   .two-third h2 span{ font-size:22px;}
+   .checkout-right-content{ width:60%; margin:25px auto;}
+   .product-info p{ font-size:17px;}
+   .product-content h4{ font-size:19px;}
+   .checkout-right-content{ width:70%;}
+   .product-info{ float:none; width:auto;}
+   .checkout-product-img{ width:auto; float:none;}
+   .select-package a{ display:inline-block;}
+   .select-package{ margin-top:1%;}
+   .upsell-product h1{ font-size:55px; padding-top:15px;}
+   .upsell-product-name span{ font-size:22px; padding:10px 0;}
+   .satisfied-customer h2{ font-size:35px; line-height:40px;}
+   .upsell-product-speciality span{ font-size:22px;}
+   .buythisproduct a{ display:inline-block; font-size:28px;}
+}
+
+@media screen and (min-width:580px) and (max-width:620px)
+{
+   .makeiteasy span{ font-size:30px; line-height:35px;}
+   .makeiteasy{ font-size:55px;}
+   .stack{ font-size:22px;}
+   .product-time{ font-size:42px; line-height:45px; letter-spacing:-2px; width:40%;}
+   .product-time span{ font-size:40px;}
+   .product-img{ width:40%;}
+   .product-box{ padding:5% 2%;}
+   .makethechange{ font-size:28px; padding:2% 2%; line-height:35px;}
+   .head-right{ width:68%;}
+   .offer-txt{ padding-top:8px; width:90%; font-size:35px;}
+   .check-img{ width:8%;}
+   .extreme-burn{ width:20%;}
+   .loss-support{ width:76%;}
+   .loss-support strong{ font-size:32px;}
+   .product-box2{ padding-bottom:7%;}
+   .content{ padding:4% 2% 7%;}
+   .solution-txt{ float:none; width:auto;}
+   .left-img{ padding-bottom:25px;}
+   .solution span{ font-size:22px; line-height:23px;}
+   h2{ font-size:22px; line-height:25px;}
+   .two-third h2 span{ font-size:22px;}
+   .checkout-right-content{ width:60%; margin:25px auto;}
+   .checkout-right-content .headform-title{ font-size:45px;}
+   .select-package{ margin-top:1%;}
+   .select-package a{ display:inline-block;}
+   .product-info p{ font-size:19px;}
+   .product-content h4{ font-size:20px;}
+   .product-info{ float:none; width:auto;}
+   .checkout-product-img{ width:auto; float:none;}
+   .upsell-product h1{ font-size:55px; padding-top:15px;}
+   .upsell-product-name span{ font-size:30px; padding-top:5px;}
+   .satisfied-customer h2{ font-size:40px;}
+
+}
+
+@media screen and (min-width:620px) and (max-width:720px)
+{
+   .head-left{ display:none;}
+   .head-mid{ float:none; margin:0;}
+   .head-right{ width:60%; float:none; margin:20px auto;}
+   .claim-head-button{ margin:0; position:inherit;}
+   .makeiteasy span{ font-size:32x; line-height:38px;}
+   .makeiteasy{ font-size:50px;}
+   .stack{ font-size:24px;}
+   .product-time{ font-size:48px; line-height:45px; letter-spacing:-2px; width:40%;}
+   .product-time span{ font-size:42px;}
+   .product-img{ width:35%;}
+   .product-box{ padding:5% 2%;}
+   .makethechange{ font-size:28px; padding:2% 2%; line-height:32px;}
+   .claim{ float:none; text-align:center;}
+   .clickhere{ float:none; margin-left:0; text-align:center;}
+   .footer ul{ float:none; text-align:center;}
+   .copyright img{ display:inline;}
+   .copyright{ float:none; text-align:center;}
+   .product-box{ background-size:100% 100%;}
+   .offer-txt{ padding-top:13px; font-size:35px;}
+   .loss-support strong{ font-size:30px;}
+   .loss-support p{ padding-top:0;}
+   .content{ padding-top:3%;}
+   #header.upsellheader .head-mid{ margin-left:0;}
+   .upsell-product-left{ margin-left:0; float:none; width:auto;}
+   .upsell-product-right{ display:none;}
+   .upsell-product{ margin-top:0;}
+   .upsell-sugarcarb-img{ position:inherit; bottom:0; right:0; text-align:center;}
+   .customer-review{ padding:8% 6%;}
+   .buythisproduct span img{ display:none;}
+   .buythisproduct a{ font-size:25px; padding:15px;}
+   .nothanks-button a{ font-size:22px;}
+   #header.upsellheader{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+   #header.upsellheader .logo{ margin-left:0; text-align:center;}
+   .whatnext-img{ margin-top:5%;}
+   .upsell-product{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+	.upsell-cellusim-img{ position:inherit; text-align:center; bottom:0; right:0;}
+	.round-arrow{ display:none;}
+}
+
+@media screen and (min-width:620px) and (max-width:690px)
+{
+    .checkout-left-content{ float:none; width:auto;}
+	.checkout-right-content{ width:60%; margin:25px auto; float:none;}
+	.select-package a{ font-size:14px;}
+	.product-content h4{ font-size:19px;}
+	.product-info p{ font-size:19px;}
+	.checkout-model{ display:none;}
+	.checkout-header{ width:auto;}
+	.thanku-head-left{ width:42%; margin-left:-3%;}
+	.head-thanku{ margin-left:-8%; width:61%;}
+	.thankutxt-line1{ font-size:26px;}
+	.thanku-txt p{ padding:10px 0;}
+	.thanku-txt{ font-size:22px;}
+	#page.thanku-page{ padding-bottom:20px;}
+}
+
+@media screen and (min-width:691px) and (max-width:720px)
+{
+  .checkout-header{ width:100%;}
+  .checkout-right-content{ margin-top:0; width:38%;}
+  .checkout-left-content{width:60%;}
+  .product-heading h2{ float:none; text-align:center;}
+  .freeshipping{ float:none; margin-top:5px; text-align:center;}
+  .product-info{ width:auto; float:none;}
+  .check{ width:12%;}
+  .checkout-product-img{ width:auto; float:none;}
+  .moneyback-img{ float:none; width:auto; text-align:center;}
+  .shipping-detail{ float:none; width:auto;}
+  .shipping-detail .feild{ width:55%;}
+  .checkout-right-content .headform-title span{ font-size:16px;}
+  .checkout-right-content .headform-title{ font-size:37px; padding:5px 15px 15px; line-height:32px;}
+  span.feild-half select{ width:100%;}
+  .red-button a{ font-size:22px;}
+  .thanku-head-left{ width:42%; margin-left:-3%;}
+	.head-thanku{ margin-left:-8%; width:61%;}
+	.thankutxt-line1{ font-size:26px;}
+	.thanku-txt p{ padding:10px 0;}
+	.thanku-txt{ font-size:22px;}
+	#page.thanku-page{ padding-bottom:20px;}
+
+}
+
+@media screen and (min-width:720px) and (max-width:860px)
+{
+   .head-left{ display:none;}
+   .claim{ float:none; text-align:center;}
+   .clickhere{ float:none; margin-left:0; text-align:center;}
+   .head-mid{ width:48%; margin:0;}
+   .head-right{ margin-right:0; width:48%;}
+   .headform-title span{ font-size:18px;}
+   .headform-title{ font-size:25px;}
+   .formfeilds{ padding:0 3%;}
+   .head-form .red-button a{ font-size:25px;}
+   .claim-head-button{ width:49%; margin-top:-26%; margin-left:-2%;}
+   .makeiteasy span{ font-size:30px;}
+   .makeiteasy{ font-size:52px;}
+   .stack{ font-size:24px;}
+   .product-time{ font-size:55px; line-height:55px; letter-spacing:-2px; width:45%;}
+   .product-time span{ font-size:50px;}
+   .product-img{ width:33%;}
+   .count-img{ margin-top:3%;}
+   .product-box{ padding:5% 2%;}
+   .product-box{ background-size:100% 100%;}
+   .offer-txt{ font-size:38px; line-height:42px;}
+   .loss-support strong{ font-size:36px;}
+   .checkout-header{ width:100%;}
+   .checkout-left-content{ width:60%;}
+   .checkout-right-content{ margin-top:0; width:38%;}
+   .product-heading h2{ float:none; text-align:center;}
+  .freeshipping{ float:none; margin-top:5px; text-align:center;}
+  .product-info{ width:auto; float:none;}
+  .check{ width:12%;}
+  .checkout-product-img{ width:auto; float:none;}
+  .moneyback-img{ float:none; width:auto; text-align:center;}
+  .shipping-detail{ float:none; width:auto;}
+  .shipping-detail .feild{ width:55%;}
+  .checkout-right-content .headform-title span{ font-size:16px;}
+  .checkout-right-content .headform-title{ font-size:37px; padding:5px 15px 15px; line-height:32px;}
+  span.feild-half select{ width:100%;}
+  .red-button a{ font-size:22px;}
+  #header.upsellheader .head-mid{ margin-left:0; width:auto; float:none;}
+   .upsell-product-left{ margin-left:0; float:none; width:auto;}
+   .upsell-product-right{ display:none;}
+   .upsell-product{ margin-top:0;}
+   .upsell-sugarcarb-img{ position:inherit; bottom:0; right:0; text-align:center;}
+   .customer-review{ padding:8% 6%;}
+   .buythisproduct span img{ display:none;}
+   .buythisproduct a{ font-size:25px; padding:15px;}
+   .nothanks-button a{ font-size:22px;}
+   #header.upsellheader{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+   #header.upsellheader .logo{ margin-left:0; text-align:center;}
+   .whatnext-img{ margin-top:5%;}
+   .upsell-product{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+   .upsell-cellusim-img{ position:inherit; text-align:center; bottom:0; right:0;}
+   .round-arrow{ display:none;}
+   .thanku-head-left{ width:56%; margin-left:-3%;}
+	.head-thanku{ margin-left:-8%; width:50%;}
+	.thankutxt-line1{ font-size:28px;}
+	.thanku-txt p{ padding:10px 0;}
+	.thanku-txt{ font-size:25px;}
+	#page.thanku-page{ padding-bottom:20px;}
+}
+
+@media screen and (min-width:860px) and (max-width:1020px)
+{
+   .head-left{ display:none;}
+   .head-mid{ width:48%; margin:0;}
+   .head-right{ margin-right:0; width:48%;}
+   .claim{ width:60%;}
+   .clickhere{ width:40%; margin-left:0; text-align:center; margin-top:2px;}
+   .claim-head-button{ width:52%; margin-top:-15%; margin-left:-2%;}
+   .makeiteasy span{ font-size:32px;}
+   .makeiteasy{ font-size:58px;}
+   .stack{ font-size:22px;}
+   .product-time{ font-size:55px; line-height:55px; letter-spacing:-2px; width:45%;}
+   .product-time span{ font-size:50px;}
+   .product-img{ width:33%;}
+   .count-img{ margin-top:3%;}
+   .product-box{ padding:5% 2%;}
+   .product-box{ background-size:100% 100%;}
+   .offer-txt{ font-size:40px; line-height:46px; letter-spacing:-1px;}
+   .loss-support strong{ font-size:36px;}
+   .makeiteasy{ padding-top:30px;}
+   .checkout-right-content .headform-title span{ font-size:16px;}
+   .red-button a{ font-size:25px;}
+   .checkout-right-content .headform-title{ font-size:40px;}
+   #header.upsellheader .head-mid{ margin-left:0; width:auto; float:none;}
+   .upsell-product-left{ margin-left:0; float:none; width:auto;}
+   .upsell-product-right{ display:none;}
+   .upsell-product{ margin-top:0;}
+   .upsell-sugarcarb-img{ position:inherit; bottom:0; right:0; text-align:center;}
+   .customer-review{ padding:8% 6%;}
+   .buythisproduct span img{ display:none;}
+   .buythisproduct a{ font-size:25px; padding:15px;}
+   .nothanks-button a{ font-size:22px;}
+   #header.upsellheader{ background-size:100% 100%; -webkit-background-size:100% 100%; -moz-background-size:100% 100%;}
+   #header.upsellheader .logo{ margin-left:0; text-align:center;}
+   .whatnext-img{ margin-top:5%;}
+   .round-arrow{ display:none;}
+   .thanku-head-left{ width:56%; margin-left:-3%;}
+	.head-thanku{ margin-left:-8%; width:50%;}
+	.thankutxt-line1{ font-size:28px;}
+	.thanku-txt p{ padding:10px 0;}
+	.thanku-txt{ font-size:25px;}
+	#page.thanku-page{ padding-bottom:20px;}
+}
