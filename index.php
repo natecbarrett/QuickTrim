@@ -5,8 +5,11 @@ session_start();
 //Get the affiliate id from the link.
 $aff_id = isset($_GET['affid']) ? $_GET['affid'] : '';
 
-//Get the campaign id from the link.
-$campaign_id = isset($_GET['sid']) ? $_GET['sid'] : '';
+//Get the clickid.
+$click_id = isset($_GET['uid']) ? $_GET['uid'] : '';
+
+//Get the request id.
+$request_id = isset($_GET['rid']) ? $_GET['rid'] : '';
 
 //Get the subids from the link.
 $s1 = isset($_GET['s1']) ? $_GET['s1'] : '';
@@ -15,7 +18,7 @@ $s3 = isset($_GET['s1']) ? $_GET['s3'] : '';
 
 //Store the stuff we need in the session.
 $_SESSION['qt_aid'] = $aff_id;
-$_SESSION['qt_cid'] = $campaign_id;
+
 
 
 ?>
@@ -110,8 +113,9 @@ $( document ).ready(function() {
 									<input type="hidden" name="s1" value="<?php echo $s1; ?>">
 									<input type="hidden" name="s2" value="<?php echo $s2; ?>">
 									<input type="hidden" name="s3" value="<?php echo $s3; ?>">
-									<input type="hidden" name="aid" value="<?php echo $aff_id;?>">
-									<input type="hidden" name="cid" value="<?php echo $campaign_id; ?>">
+									<input type="hidden" name="aff_id" value="<?php echo $aff_id;?>">
+									<input type="hidden" name="click_id" value="<?php echo $uid; ?>">
+									<input type="hidden" name="req_id" value="<?php echo $request_id; ?>">
 								</div>
 								<div class="red-button">
 									<a class="details_transaction" href="#">Rush
