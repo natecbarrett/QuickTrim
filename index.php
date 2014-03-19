@@ -1,8 +1,9 @@
 <?php
 //start the php session.
 session_start();
+require_once 'classes/utils.php';
 
-if ($_COOKIE["qt_order"] == true)
+if ($_COOKIE["qt_order"])
 {
 	
 	header("Location: denied.php");
@@ -24,7 +25,7 @@ $s2 = isset($_GET['s1']) ? $_GET['s2'] : '';
 $s3 = isset($_GET['s1']) ? $_GET['s3'] : '';
 
 //Get the users ip address.
-$ip = $_SERVER["REMOTE_ADDR"];
+$ip = getRealIpAddr();
 
 //Store the stuff we need in the session.
 $_SESSION['qt_affid'] 	= $aff_id;

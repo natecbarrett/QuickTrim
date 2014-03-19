@@ -1,10 +1,12 @@
 <?php
 session_start();
+require_once 'classes/utils.php';
+
 $prospect_id 			= $_GET['prospectid'];
 $session_prospect_id 	= $_SESSION['qt_prospectid'];
 
 //Get the users ip address.
-$ip = $_SERVER["REMOTE_ADDR"];
+$ip = getRealIpAddr();
 
 if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect_id))
 {
@@ -13,8 +15,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en"
-	lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
 <!--[if IE 7]>
 <html class="ie ie7" lang="en-US">
 <![endif]-->

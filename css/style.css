@@ -1126,7 +1126,7 @@ border-top-right-radius: 10px;
 
 
 
-  background:url(images/product-bg-img.png) no-repeat;
+  background:url(../images/product-bg-img.png) no-repeat;
 
 
 
@@ -2482,7 +2482,7 @@ font-family: tahoma;
 
 
 
-  background:#6b013b url(images/product-seleceted-button-bg.png) repeat-x;
+  background:#6b013b url(../images/product-seleceted-button-bg.png) repeat-x;
 
 
 
@@ -2510,7 +2510,7 @@ font-family: tahoma;
 
 
 
-  background:#d91084 url(images/product-seleceted-button-h.png) repeat-x;
+  background:#d91084 url(../images/product-seleceted-button-h.png) repeat-x;
 
 
 
@@ -2554,7 +2554,7 @@ font-family: tahoma;
 
 
 
-  background:#6b013b url(images/product-seleceted-button-bg.png) repeat-x;
+  background:#6b013b url(../images/product-seleceted-button-bg.png) repeat-x;
 
 
 
@@ -2586,7 +2586,7 @@ font-family: tahoma;
 
 
 
-  background:#d91084 url(images/product-seleceted-button-h.png) repeat-x;
+  background:#d91084 url(../images/product-seleceted-button-h.png) repeat-x;
 
 
 
@@ -3038,7 +3038,7 @@ span.feild-half small a:hover{ text-decoration:none;}
 
 
 
-  background:url(images/red-button-bg-h.png) no-repeat;
+  background:url(../images/red-button-bg-h.png) no-repeat;
 
 
 
@@ -3436,7 +3436,7 @@ cursor:pointer;
 
 
 
-#header.upsellheader{ background:url(images/upsell-header-main-bg.png) no-repeat;}
+#header.upsellheader{ background:url(../images/upsell-header-main-bg.png) no-repeat;}
 
 
 
@@ -3486,7 +3486,7 @@ cursor:pointer;
 
 .upsell-product{
 
-  background:url(images/upsell-content-bg.png) no-repeat;
+  background:url(../images/upsell-content-bg.png) no-repeat;
 
   margin-top:-17%;
 
@@ -3544,7 +3544,7 @@ cursor:pointer;
 
   display:block;
 
-  background:url(images/icon-check.png) no-repeat;
+  background:url(../images/icon-check.png) no-repeat;
 
   padding:3px 0 3px 35px;
 
@@ -3588,7 +3588,7 @@ cursor:pointer;
 
 .customer-review{
 
-  background:url(images/upsell-content-bg.png) no-repeat;
+  background:url(../images/upsell-content-bg.png) no-repeat;
 
   margin-top:-5%;
 
@@ -3738,7 +3738,7 @@ cursor:pointer;
 
 .buythisproduct a{
 
-  background:url(images/buy-button-bg.png) repeat-x;
+  background:url(../images/buy-button-bg.png) repeat-x;
 
   display:block;
 
@@ -3768,7 +3768,7 @@ cursor:pointer;
 
 
 
-.buythisproduct a:hover{ background:url(images/buy-button-bg-h.png) repeat-x;}
+.buythisproduct a:hover{ background:url(../images/buy-button-bg-h.png) repeat-x;}
 
 
 
@@ -3778,7 +3778,7 @@ cursor:pointer;
 
 .nothanks-button a{
 
-  background:url(images/buy-button-bg.png) repeat-x;
+  background:url(../images/buy-button-bg.png) repeat-x;
 
   display:block;
 
@@ -3806,7 +3806,7 @@ cursor:pointer;
 
 
 
-.nothanks-button a:hover{  background:url(images/buy-button-bg-h.png) repeat-x;}
+.nothanks-button a:hover{  background:url(../images/buy-button-bg-h.png) repeat-x;}
 
 
 
