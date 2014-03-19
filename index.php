@@ -102,19 +102,19 @@ $( document ).ready(function() {
 						<div class="head-form">
 							<form id="prospectform">
 								<div class="formfeilds">
-									<input name="fields_fname" id="fname" type="text" placeholder="First Name" pattern="[a-zA-Z ]{2,}" maxlength="30" required="required">
-									<input name="fields_lname" id="lname" type="text" placeholder="Last Name" pattern="[a-zA-Z ]{2,}" maxlength="30" required="required">
-									<input name="fields_address1" id="address" type="text" placeholder="Address" required="required">
-									<input name="fields_city" id="city" type="text" placeholder="City" pattern="[a-zA-Z ]{2,}" maxlength="50" required="required">
-									<input name="fields_state" id="state" type="text" placeholder="State" pattern="[a-zA-Z ]{2,}" maxlength="50" required="required">
-									<input name="fields_zip" id="zipcode" type="text" placeholder="Zip" required="required">
-									<input name="fields_phone" id="phone" type="text" placeholder="Phone" required="required">
-									<input name="fields_email" id="email" type="email" placeholder="Email" required="required">
+									<input name="first_name" id="fname" type="text" placeholder="First Name" pattern="[a-zA-Z ]{2,}" maxlength="30" required="required">
+									<input name="last_name" id="lname" type="text" placeholder="Last Name" pattern="[a-zA-Z ]{2,}" maxlength="30" required="required">
+									<input name="address_1" id="address" type="text" placeholder="Address" required="required">
+									<input name="city" id="city" type="text" placeholder="City" pattern="[a-zA-Z ]{2,}" maxlength="50" required="required">
+									<input name="state" id="state" type="text" placeholder="State" pattern="[a-zA-Z ]{2,}" maxlength="50" required="required">
+									<input name="zip" id="zipcode" type="text" placeholder="Zip" required="required">
+									<input name="phone" id="phone" type="text" placeholder="Phone" required="required">
+									<input name="email" id="email" type="email" placeholder="Email" required="required">
 									<input type="hidden" name="s1" value="<?php echo $s1; ?>">
 									<input type="hidden" name="s2" value="<?php echo $s2; ?>">
 									<input type="hidden" name="s3" value="<?php echo $s3; ?>">
 									<input type="hidden" name="aff_id" value="<?php echo $aff_id;?>">
-									<input type="hidden" name="click_id" value="<?php echo $uid; ?>">
+									<input type="hidden" name="click_id" value="<?php echo $click_id; ?>">
 									<input type="hidden" name="req_id" value="<?php echo $request_id; ?>">
 								</div>
 								<div class="red-button">

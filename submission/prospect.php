@@ -1,5 +1,5 @@
 <?php
-require_once "classes/curl.inc.php";
+require_once "../classes/curl.inc.php";
 
 session_start();
 
