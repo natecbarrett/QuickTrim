@@ -1,4 +1,17 @@
+<?php 
+session_start();
+$order_id 				= $_GET['order_id'];
+$session_order_id 	= $_SESSION['qt_orderid'];
 
+//Get the users ip address.
+$ip = $_SERVER["REMOTE_ADDR"];
+
+if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
+{
+	header("Location: index.php");
+	exit();
+}
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
 <!--[if IE 7]>
@@ -18,16 +31,17 @@
 <title>Upsell Item 1 | QuickTrim Diet and Beauty</title>
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'/><![endif]-->
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" href="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/style.css">
-<link href="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/css/media.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css//style.css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if IE 8]><link href="https://www.quicktrimoffer.com/wp-content/themes/quicktrim/css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
-<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=3.8.1' type='text/css' media='all' />
+<!--[if IE 8]><link href="css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 <script>
 	$(document).ready(function(){
+
+		
 		$(".newupsell_submit").click(function(e) {
 			e.stopPropagation();
 			e.preventDefault();
@@ -44,6 +58,9 @@
 </script>
 </head>
 <body>
+<div id="fp">
+<?php if ($_SESSION['qt_fp'] == 1 && isset($order_id)) { $_SESSION['qt_fp'] = 0; echo '<iframe src="https://afftrkca.com/p.ashx?o=459&t=' . $order_id . '" height="1" width="1" frameborder="0"></iframe>'; } ?>
+</div>
 	<div id="page" >
          <div id="header" class="upsellheader">
              <div class="head clearfix">

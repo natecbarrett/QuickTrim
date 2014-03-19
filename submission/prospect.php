@@ -122,7 +122,7 @@ if ($response_parts["errorFound"] == 0)
 
 else 
 {
-	$result = array("success" => "true", "message" => $response_parts["responseCode"]);
+	$result = array("success" => "false", "message" => $response_parts["responseCode"]);
 }
 
 

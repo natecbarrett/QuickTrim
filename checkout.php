@@ -3,6 +3,9 @@ session_start();
 $prospect_id 			= $_GET['prospectid'];
 $session_prospect_id 	= $_SESSION['qt_prospectid'];
 
+//Get the users ip address.
+$ip = $_SERVER["REMOTE_ADDR"];
+
 if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect_id))
 {
 	header("Location: index.php");
@@ -37,6 +40,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script src="js/blockUI.js"></script>
 <script>
 		$(document).ready(function(){
 
@@ -144,6 +148,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 			$(".rushorder-button").click(function(){
 
 				event.preventDefault();
+				
 		    	var check = $("#orderform :input").validator();
 		    	if (check.data("validator").checkValidity()==true)
 		    	{
@@ -151,7 +156,8 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 	      			var year_value = $('.cardyear').val();
 
 	      			$('.cc_expires').val(month_value +  year_value);
-
+	      			 $.blockUI({ message: $('#domMessage') });
+	      			 
 		    		$.ajax({
 		  			  type: "POST",
 		  			  url: "submission/order.php",
@@ -160,7 +166,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 						var response = jQuery.parseJSON(response);
 						if (response.success == "true")
 						{
-							window.location = "upsell_1.php";
+							window.location = "upsell_1.php?order_id=" + response.message;
 						}
 
 						else
@@ -280,6 +286,14 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 										<img src="images/uncheck-box.png" alt="check">
 										<input style="display: none;" class="checkbox" type="checkbox" value="54.9500" name="extra" />
 									</div>
+									<input type="hidden" name="ip" value="<?php echo $ip; ?>" />
+									<input type="hidden" name="s1" value="<?php echo $_SESSION['qt_s1']; ?>">
+									<input type="hidden" name="s2" value="<?php echo $_SESSION['qt_s2']; ?>">
+									<input type="hidden" name="s3" value="<?php echo $_SESSION['qt_s3']; ?>">
+									<input type="hidden" name="aff_id" value="<?php echo $_SESSION['qt_affid'];?>">
+									<input type="hidden" name="click_id" value="<?php echo $_SESSION['qt_clickid'] ; ?>">
+									<input type="hidden" name="req_id" value="<?php echo $_SESSION['qt_reqid']; ?>">
+									<input type="hidden" name="prospectId" value="<?php echo $prospect_id; ?>" />
 									<input type="hidden" name="p_retailprice" class="p_retailprice" value="69.00" />
 									<input type="hidden" name="p_saving" class="p_saving" value="20.00" />
 									<input type="hidden" name="p_shippingamount" class="p_shippingamount" value="5.95" />
@@ -413,9 +427,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 									</span>
 								</div>
 								<div class="red-button">
-									<a class="rushorder-button" href="javascript:void(0);">Rush My
-										order <span>same day shipping!</span>
-									</a>
+									<a class="rushorder-button" href="#">Rush My order <span>same day shipping!</span></a>
 								</div>
 
 								<div class="sponsors">
@@ -444,7 +456,9 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 				</div>
 			</div>
 		</div>
-
+		<div id="domMessage" style="display:none;"> 
+    		<h1>We are processing your request.  Please be patient.</h1> 
+		</div> 
 </body>
 </html>
 

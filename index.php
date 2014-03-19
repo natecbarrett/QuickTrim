@@ -2,6 +2,13 @@
 //start the php session.
 session_start();
 
+if ($_COOKIE["qt_order"] == true)
+{
+	
+	header("Location: denied.php");
+	exit();
+}
+
 //Get the affiliate id from the link.
 $aff_id = isset($_GET['affid']) ? $_GET['affid'] : '';
 
@@ -20,9 +27,13 @@ $s3 = isset($_GET['s1']) ? $_GET['s3'] : '';
 $ip = $_SERVER["REMOTE_ADDR"];
 
 //Store the stuff we need in the session.
-$_SESSION['qt_affid'] = $aff_id;
+$_SESSION['qt_affid'] 	= $aff_id;
 $_SESSION['qt_clickid'] = $click_id;
-$_SESSION['qt_reqid'] = $request_id;
+$_SESSION['qt_reqid'] 	= $request_id;
+$_SESSION['qt_s1'] 		= $s1;
+$_SESSION['qt_s2'] 		= $s2;
+$_SESSION['qt_s3'] 		= $s3;
+
 
 
 ?>
@@ -122,6 +133,7 @@ $( document ).ready(function() {
 									<input type="hidden" name="click_id" value="<?php echo $click_id; ?>">
 									<input type="hidden" name="req_id" value="<?php echo $request_id; ?>">
 									<input type="hidden" name="ip" value="<?php echo $ip; ?>">
+									<input type="hidden" name="country" value="US" />
 								</div>
 								<div class="red-button">
 									<a class="details_transaction" href="#">Rush
