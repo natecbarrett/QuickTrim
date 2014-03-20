@@ -20,67 +20,67 @@ $campaign_id = "23";
 
 //Build the limilight api params array.
 $params = array(
-	
+
 	//The api username.
 	"username" 		=> $api_username,
-		
+
 	//The api password
 	"password" 		=> $api_password,
 
 	//the method we want to use (New Prospect)
 	"method" 		=> $method,
-		
+
 	//the limelight campaign id.
 	"campaignId"	=> $campaign_id,
-		
+
 	//The prospects first name.
 	"firstName"		=> $_POST['first_name'],
-		
+
 	//The prospects last name.
 	"lastName"		=> $_POST['last_name'],
-		
+
 	//The prospects street address.
 	"address1"		=> $_POST['address_1'],
-		
+
 	//The prospects city
 	"city"			=> $_POST['city'],
-		
+
 	//The prospecs state
 	"state" 		=> $_POST['state'],
-		
+
 	//the prospects zip code.
 	"zip"			=> $_POST['zip'],
 
 	//The prospects country
 	"country"		=> $_POST['country'],
-		
+
 	//The prospects phone number.
 	"phone"			=> $_POST['phone'],
-		
+
 	//The prospects email address.
 	"email"			=> $_POST['email'],
-		
+
 	//The affiliate id.
 	"AFFID"			=>$_POST['aff_id'],
-		
+
 	//Subid 1
 	"C1"			=>$_POST['s1'],
-	
+
 	//Subid 2
 	"C2"			=>$_POST['s2'],
-	
+
 	//Subid 3
 	"C3"			=>$_POST['s3'],
-	
+
 	//The unique click id.
 	"click_id"		=>$_POST['click_id'],
 
 	//The req id.
 	"OPT"			=> $_POST['req_id'],
-	
+
 	//Notes
 	"notes"			=> '',
-	
+
 	//Ip Address
 	"ipAddress"		=> $_POST['ip']
 );
@@ -116,11 +116,13 @@ parse_str($result, $response_parts);
 
 if ($response_parts["errorFound"] == 0)
 {
-	$_SESSION['qt_prospectid'] = $response_parts["prospectId"];
+	$_SESSION['qt_prospectid'] 	= $response_parts["prospectId"];
+	$_SESSION['qt_step']		= 2;
 	$result = array("success" => "true", "message" => $response_parts["prospectId"]);
+
 }
 
-else 
+else
 {
 	$result = array("success" => "false", "message" => $response_parts["responseCode"]);
 }

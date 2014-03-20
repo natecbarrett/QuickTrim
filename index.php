@@ -5,7 +5,7 @@ require_once 'classes/utils.php';
 
 if ($_COOKIE["qt_order"])
 {
-	
+
 	header("Location: denied.php");
 	exit();
 }
@@ -34,8 +34,7 @@ $_SESSION['qt_reqid'] 	= $request_id;
 $_SESSION['qt_s1'] 		= $s1;
 $_SESSION['qt_s2'] 		= $s2;
 $_SESSION['qt_s3'] 		= $s3;
-
-
+$_SESSION['qt_step']	= 1;
 
 ?>
 <!DOCTYPE html>
@@ -289,9 +288,9 @@ $( document ).ready(function() {
 			</div>
 
 		</div>
-		<div id="domMessage" style="display:none;"> 
-    <h1>We are processing your request.  Please be patient.</h1> 
-</div> 
+		<div id="domMessage" style="display:none;">
+    <h1>We are processing your request.  Please be patient.</h1>
+</div>
 
 </body>
 </html>
