@@ -1,7 +1,8 @@
-<?php 
+<?php
 session_start();
+
 $order_id 				= $_GET['order_id'];
-$session_order_id 	= $_SESSION['qt_orderid'];
+$session_order_id 		= $_SESSION['qt_orderid'];
 
 //Get the users ip address.
 $ip = $_SERVER["REMOTE_ADDR"];
@@ -12,6 +13,7 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
 	header("Location: index.php");
 	exit();
 }
+
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
@@ -27,7 +29,7 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
 <title>Upsell Item 1 | QuickTrim Diet and Beauty</title>
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'/><![endif]-->
@@ -41,20 +43,19 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
 <script>
 	$(document).ready(function(){
 
-		
+
 		$(".newupsell_submit").click(function(e) {
 			e.stopPropagation();
 			e.preventDefault();
-			
-		});	
+
+		});
 
 		$(".nothanks-button").click(function(e) {
 			e.stopPropagation();
 			e.preventDefault();
 			window.location = "upsell_2.php";
-		});			
+		});
 	});
-
 </script>
 </head>
 <body>
@@ -73,8 +74,8 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
                           <img src="images/upsell-head-main-txt.png" alt="upsell-head-main-txt">
                      </div>
                      <div class="whatnext-img"><img src="images/whatnext-img.png" alt="whatnext-img"></div>
-                 </div> 
-             </div>           
+                 </div>
+             </div>
          </div>
          <div class="row">
              <div class="upsell-main">
@@ -101,35 +102,35 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
                      <div class="satisfied-customer">
                         <h2>SATISFIED CUSTOMERS</h2>
                         <div class="clearfix testimonial-common">
-                         <div class="testimonial clearfix">                            
+                         <div class="testimonial clearfix">
                             <div class="client-review">QuickTrim is Awesome! I was shocked by the amazing results that i saw, one of the best products I've tried.</div>
                             <span><small>Michelle F </small> West Palm Beach, FL </span>
                          </div>
-                         <div class="testimonial clearfix">                            
-                            <div class="client-review">I've tried many products and QuickTrim has by far work thes best for me. Great way to jump start any weight loss or diet program. </div>                            
+                         <div class="testimonial clearfix">
+                            <div class="client-review">I've tried many products and QuickTrim has by far work thes best for me. Great way to jump start any weight loss or diet program. </div>
                             <span><small>Pamela G</small> New York City, NY </span>
                          </div> <!-- testimonial ends here-->
                      </div>
-                     </div>              
+                     </div>
                      <div class="clearfix">
                          <div class="product-price-detail">
 
 						<form name='upsellform1' id='upsellform1'>
 						</form>
-												 
+
                              <span>was</span>
                              <span class="oldprice">$60.00</span>
                              <span class="nowonly">now only</span>
                              <span class="newprice">$30.00</span>
-                             <div class="buythisproduct">																					 
+                             <div class="buythisproduct">
                                  <a href="#" id="newupsell_submit" class="newupsell_submit">
                                    <span><img src="images/icon-cart.png" alt="icon-cart"></span>
                                    buy THIS PRODUCT
                                  </a>
                              </div>
                              <div><img src="images/big-payment-method-img.jpg" alt="big-payment-method-img"></div>
-                             <div class="clearfix"> 
-																					 
+                             <div class="clearfix">
+
                                 <div class="nothanks-button"><a href="#">No Thanks</a></div>
                              </div>
                          </div>
@@ -139,16 +140,16 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
                      </div>
                  </div> <!-- customer-review ends here-->
              </div> <!-- upsell-main ends here-->
-              
+
 <div class="footer">
 	 <span>* These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</span>
 	 <div class="clearfix foot-nav">
 			 <ul class="clearfix">
-			 	   
+
 				<div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="privacy.html">Privacy Policy</a></li>
 <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="terms.html">Terms &#038; Conditions</a></li>
 <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a>Contact Us: 877.264.8633</a></li>
-</ul></div>			 
+</ul></div>
 			 </ul>
 			 <div class="copyright">
 					 Copyright © 2014. All Rights Reserved<br/>
@@ -158,7 +159,7 @@ if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
 	 <p>*This product is not for use by or sale to persons under the age of 18. These products should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. A Doctor's advice should be sought before using this and any supplemental dietary product. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual weight loss results will vary and conditions may apply.</p>
 	 <p>**RISK FREE offer applies to purchases made in the United States that are returned within 14 days of initial transaction date.</p>
 	 <p>Disclaimer: I consent to be contacted by phone and/or text at the number provided, including a wireless number using automated technology. I understand I am under no obligation to provide consent to purchase goods or services.</p>
-</div>         </div>       
+</div>         </div>
 </div>
 		</body>
 </html>
