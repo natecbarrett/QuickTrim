@@ -4,15 +4,17 @@ require_once 'classes/utils.php';
 
 $prospect_id 			= $_GET['prospectid'];
 $session_prospect_id 	= $_SESSION['qt_prospectid'];
+$step 					= $_SESSION['qt_step'];
 
 //Get the users ip address.
 $ip = getRealIpAddr();
 
-if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect_id))
+if ($step != 2 || !$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect_id))
 {
 	header("Location: index.php");
 	exit();
 }
+
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
@@ -149,7 +151,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 			$(".rushorder-button").click(function(){
 
 				event.preventDefault();
-				
+
 		    	var check = $("#orderform :input").validator();
 		    	if (check.data("validator").checkValidity()==true)
 		    	{
@@ -158,7 +160,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 
 	      			$('.cc_expires').val(month_value +  year_value);
 	      			 $.blockUI({ message: $('#domMessage') });
-	      			 
+
 		    		$.ajax({
 		  			  type: "POST",
 		  			  url: "submission/order.php",
@@ -383,10 +385,10 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 										<option value="master">MasterCard</option>
 										<option value="amex">American Express</option>
 										<option value="Discover">Discover</option>
-									</select> 
+									</select>
 									<input id="CardNumber" name="cc_number" type="text" value="" placeholder="Credit Card Number">
 									<span class="feild-half">
-										<label>Expiration Date</label> 
+										<label>Expiration Date</label>
 										<select id="cardmonth" name="fields_expmonth" class="cardmonth">
 											<option value="">Month</option>
 											<option value="01">01</option>
@@ -418,11 +420,11 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 											<option value="24">2024</option>
 											<option value="25">2025</option>
 										</select>
-									</span> 
+									</span>
 									<span class="feild-half">
 									<input id="carverirynum" name="cc_cvv" type="text" value="" placeholder="CVV">
-									<input type="hidden" id="cc_expires" name="cc_expires" class="cc_expires" /> 
-									<small> 
+									<input type="hidden" id="cc_expires" name="cc_expires" class="cc_expires" />
+									<small>
 										<a target="_blank" href="cvv-help.html">What is this?</a>
 									</small>
 									</span>
@@ -436,7 +438,7 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 										<img src="images/lock-img.png" alt="lock">
 										This is a secure <em>128 BIT SSL</em> connection.
 									</span>
-									<img src="images/sponsor-img1.png" alt="sponsor"> 
+									<img src="images/sponsor-img1.png" alt="sponsor">
 									<img src="images/sponsor-img2.png" alt="sponsor">
 									<img src="images/sponsor-img3.png" alt="sponsor">
 									<img src="images/sponsor-img4.png" alt="sponsor">
@@ -457,9 +459,9 @@ if (!$prospect_id || !$session_prospect_id || ($prospect_id != $session_prospect
 				</div>
 			</div>
 		</div>
-		<div id="domMessage" style="display:none;"> 
-    		<h1>We are processing your request.  Please be patient.</h1> 
-		</div> 
+		<div id="domMessage" style="display:none;">
+    		<h1>We are processing your request.  Please be patient.</h1>
+		</div>
 </body>
 </html>
 

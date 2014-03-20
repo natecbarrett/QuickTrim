@@ -3,12 +3,13 @@ session_start();
 
 $order_id 				= $_GET['order_id'];
 $session_order_id 		= $_SESSION['qt_orderid'];
+$step 					= $_SESSION['qt_step'];
 
 //Get the users ip address.
 $ip = $_SERVER["REMOTE_ADDR"];
 
 
-if (!$order_id || !$session_order_id || ($order_id != $session_order_id))
+if ($step != 3 || !$order_id || !$session_order_id || ($order_id != $session_order_id))
 {
 	header("Location: index.php");
 	exit();
